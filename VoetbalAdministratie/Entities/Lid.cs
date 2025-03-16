@@ -54,7 +54,7 @@ namespace VoetbalAdministratie
             get { return dateofbirth; }
             set
             {
-                if (value > Convert.ToDateTime("2005"))
+                if (value > DateTime.Now)
                     throw new ArgumentException("Date of birth cannot be in the future");
                 dateofbirth = value;
             }

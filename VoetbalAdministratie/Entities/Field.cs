@@ -22,9 +22,7 @@ namespace VoetbalAdministratie
             get { return fieldname; }
             set
             {
-                if (!string.IsNullOrWhiteSpace(fieldname))
                     fieldname = value;
-                else throw new ArgumentException("Fieldname cannot be empty");
             }
 
 

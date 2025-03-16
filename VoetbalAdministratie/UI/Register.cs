@@ -47,9 +47,10 @@ namespace VoetbalAdministratie
             _membershipManager.Register(lid);
 
             MessageBox.Show("Welcome! You are now registerd!");
-            this.Close();
-            Login loginform = new Login(_membershipManager);
+            
+           Login loginform = new Login(_membershipManager);
             loginform.ShowDialog();
+            this.Close();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

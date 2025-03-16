@@ -22,9 +22,7 @@ namespace VoetbalAdministratie
         {
             get { return teamName; }
             set {
-                if (!string.IsNullOrWhiteSpace(teamName))
                     teamName = value;
-                else throw new ArgumentException("Teamname cannot be empty!");
         } }
 
         public int MatchPoints
